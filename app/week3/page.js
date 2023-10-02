@@ -4,7 +4,7 @@ import StudentInfo from "../week2/studentInfo";
 
 export default function Page(){
     return(
-        <main className="justify-center m-10">
+        <main className="justify-center">
             <StudentInfo/>
             <ItemList />
           
