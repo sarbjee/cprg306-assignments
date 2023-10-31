@@ -7,14 +7,14 @@ import ItemList from "./item-list";
 export default function Page() {
     const [items, setItems] = useState(itemsData);
     
-    const handleAddItem = (item) => {
-        setItems([...items, item]);
+    function handleAddItem(item) {
+        setItems((items) => [...items, item]);
     }
 
     return (
         <main className="justify-center m-10">
             <NewItem onAddItem={handleAddItem} />
-            {Array.isArray(items) ? <ItemList items={items}/> : <p>Loading...</p>}
+           <ItemList items={items}/>
         </main>
     );
 }
