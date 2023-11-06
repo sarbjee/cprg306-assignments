@@ -27,6 +27,9 @@ export default function Home() {
        <div>
         <Link className="hover:underline" href="\week7">WEEK 7</Link>
       </div>
+      <div>
+        <Link className="hover:underline" href="\week8">WEEK 8</Link>
+      </div>
 
     </main>
   )
